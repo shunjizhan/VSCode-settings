@@ -1,0 +1,69 @@
+{
+    "workbench.colorTheme": "βui - Eighties Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Monaco",
+    "editor.wordWrap": "on",
+    "editor.showFoldingControls": "always",
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#f991577f",
+        "editor.inactiveSelectionBackground": "#f991574f",
+
+        "editor.selectionHighlightBorder": "#f991578f",
+        "editor.selectionHighlightBackground": "#ffffff00",
+        
+        "editor.background": "#282828"
+    },
+
+    "editor.tokenColorCustomizations": {
+        "strings": "#FFE792",
+        "textMateRules": [
+            {
+                "scope": "punctuation",
+                "settings": {
+                    "foreground": "#888888"
+                }
+            }, {
+                "scope": "meta.function-call entity.name.function",
+                "settings": {
+                    "foreground": "#71A1D0"
+                }
+            }, {
+                "scope": "entity.name.function",
+                "settings": {
+                    "foreground": "#99cc99"
+                }
+            }, {
+                "scope": "variable.parameter",
+                "settings": {
+                    "foreground": "#f99157"
+                }
+            }, {
+                "scope": "keyword.operator",
+                "settings": {
+                    "foreground": "#ffcc66"
+                }
+            }, {
+                "scope": "entity.name",
+                "settings": {
+                    "foreground": "#71A1D0"
+                }
+            }, {
+                "scope": "variable.other.constant",
+                "settings": {
+                    "foreground": "#fcfcfc",
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.js": "typescriptreact"
+    }
+    
+}

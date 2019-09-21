@@ -59,6 +59,14 @@
                     "foreground": "#fcfcfc",
                     "fontStyle": ""
                 }
+            }, {
+                "name": "Object Literal",
+                "scope": [
+                    "meta.object-literal.key"
+                ],
+                "settings": {
+                    "foreground": "#FFE792"
+                }
             }
         ]
     },

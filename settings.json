@@ -16,14 +16,32 @@
 
         "editor.selectionHighlightBorder": "#f991578f",
         "editor.selectionHighlightBackground": "#ffffff00",
+
+        "editorBracketMatch.border": "#f991578f",
         
-        "editor.background": "#282828"
+        // "editor.foreground": "#ff0000",
+        "editor.background": "#282828",
+        "editorGutter.background": "#282828",
+
+        "list.hoverForeground": "#f99157",
+        "list.hoverBackground": "#00000000",
+        "list.inactiveSelectionForeground": "#f99157",
     },
 
     "editor.tokenColorCustomizations": {
         "strings": "#FFE792",
-        "textMateRules": [
-            {
+        "textMateRules": [{
+                "scope": [
+                    "variable",
+                    "variable.other",
+                    "variable.name",
+                    "variable.other.constant"
+                ],
+                "settings": {
+                    "foreground": "#eeeeee",
+                    "fontStyle": ""
+                }
+            },{
                 "scope": "punctuation",
                 "settings": {
                     "foreground": "#888888"
@@ -54,12 +72,6 @@
                     "foreground": "#71A1D0"
                 }
             }, {
-                "scope": "variable.other.constant",
-                "settings": {
-                    "foreground": "#fcfcfc",
-                    "fontStyle": ""
-                }
-            }, {
                 "name": "Object Literal",
                 "scope": [
                     "meta.object-literal.key"
@@ -71,7 +83,42 @@
         ]
     },
     "files.associations": {
-        "*.js": "typescriptreact"
-    }
+        "*.js": "typescriptreact",
+        "*.jsx": "javascriptreact"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+
+
+
+    // Specify the refresh interval in seconds
+    "crypto-ticker.interval": 60,
+    // Specify the opening period
+    "crypto-ticker.period": "24HOUR",
+    // Customize your high and low colors to suite your status bar
+    "crypto-ticker.higherColor": "white",
+    "crypto-ticker.lowerColor": "white",
+    // Customize your tickers
+    "crypto-ticker.tickers": [
+        {
+            // The base cryptocurrency symbol
+            "symbol": "BTC",
+            // The comparison currency symbol
+            "currency": "USD",
+            // The cryptocurrency exchange
+            // "exchange": "Coinbase",
+            // Create a custom ticker template
+            "template": "{symbol} {price}"
+        },
+        {
+            // The base cryptocurrency symbol
+            "symbol": "EOS",
+            // The comparison currency symbol
+            "currency": "USD",
+            // The cryptocurrency exchange
+            // "exchange": "Coinbase",
+            // Create a custom ticker template
+            "template": "{symbol} {price}"
+        },
+    ],
     
 }

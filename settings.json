@@ -1,7 +1,12 @@
 {
-    "workbench.colorTheme": "βui - Eighties Dark",
-    "workbench.iconTheme": "vscode-icons",
+    "typescript.validate.enable": false,
     "window.zoomLevel": 0,
+    "files.associations": {
+        "*.js": "typescriptreact",
+        "*.jsx": "typescriptreact"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+
     "editor.fontSize": 13,
     "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
@@ -10,6 +15,8 @@
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
+
+    "workbench.iconTheme": "vscode-icons","workbench.tree.indent": 16,
     "workbench.colorCustomizations": {
         "editor.selectionBackground": "#f991577f",
         "editor.inactiveSelectionBackground": "#f991574f",
@@ -19,9 +26,8 @@
 
         "editorBracketMatch.border": "#f991578f",
         
-        // "editor.foreground": "#ff0000",
-        "editor.background": "#282828",
-        "editorGutter.background": "#282828",
+        "editor.background": "#222222",
+        "editorGutter.background": "#222222",
 
         "list.hoverForeground": "#f99157",
         "list.hoverBackground": "#00000000",
@@ -31,6 +37,7 @@
     "editor.tokenColorCustomizations": {
         "strings": "#FFE792",
         "textMateRules": [{
+                "name": "default color",
                 "scope": [
                     "variable",
                     "variable.other",
@@ -42,6 +49,7 @@
                     "fontStyle": ""
                 }
             },{
+                "name": "includes parathesis",
                 "scope": "punctuation",
                 "settings": {
                     "foreground": "#888888"
@@ -79,17 +87,26 @@
                 "settings": {
                     "foreground": "#FFE792"
                 }
+            }, {
+                "scope": [
+                    // "entity.name.label",
+                    // "meta.function-call",
+                    // "variable.function",
+                    // "keyword.other.special-method",
+                    // "support.function",
+                    // "support.type",
+                    // "support.class"
+			],
+                "settings": {
+                    "foreground": "#F4878A"
+                }
             }
         ]
     },
-    "files.associations": {
-        "*.js": "typescriptreact",
-        "*.jsx": "javascriptreact"
-    },
-    "vsicons.dontShowNewVersionMessage": true,
 
 
 
+    /* ----------- crypto watcher settings ----------- */
     // Specify the refresh interval in seconds
     "crypto-ticker.interval": 60,
     // Specify the opening period
@@ -98,8 +115,7 @@
     "crypto-ticker.higherColor": "white",
     "crypto-ticker.lowerColor": "white",
     // Customize your tickers
-    "crypto-ticker.tickers": [
-        {
+    "crypto-ticker.tickers": [{
             // The base cryptocurrency symbol
             "symbol": "BTC",
             // The comparison currency symbol
@@ -107,18 +123,26 @@
             // The cryptocurrency exchange
             // "exchange": "Coinbase",
             // Create a custom ticker template
-            "template": "{symbol} {price}"
-        },
-        {
-            // The base cryptocurrency symbol
+            "template": "{price}"
+        }, {
             "symbol": "EOS",
-            // The comparison currency symbol
             "currency": "USD",
-            // The cryptocurrency exchange
-            // "exchange": "Coinbase",
-            // Create a custom ticker template
-            "template": "{symbol} {price}"
+            "template": "{price}"
+        }, {
+            "symbol": "ATOM",
+            "currency": "USD",
+            "template": "{price}"
+        }, {
+            "symbol": "BCH",
+            "currency": "USD",
+            "template": "{price}"
+        }, {
+            "symbol": "XRP",
+            "currency": "USD",
+            "template": "{price}"
         },
     ],
+    "workbench.colorTheme": "βui - Eighties Dark",
+    "explorer.confirmDragAndDrop": false,
     
 }

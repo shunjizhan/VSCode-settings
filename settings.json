@@ -1,6 +1,6 @@
-{
+-{
     "typescript.validate.enable": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "files.associations": {
         "*.js": "typescriptreact",
         "*.jsx": "typescriptreact"
@@ -11,10 +11,13 @@
     "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
     "editor.showFoldingControls": "always",
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
+
+    "css.colorDecorators.enable": false,
+    "scss.colorDecorators.enable": false,
 
     "workbench.iconTheme": "vscode-icons","workbench.tree.indent": 16,
     "workbench.colorCustomizations": {
@@ -85,7 +88,7 @@
                     "meta.object-literal.key"
                 ],
                 "settings": {
-                    "foreground": "#FFE792"
+                    "foreground": "#ffcc66"
                 }
             }, {
                 "scope": [
@@ -144,5 +147,31 @@
     ],
     "workbench.colorTheme": "βui - Eighties Dark",
     "explorer.confirmDragAndDrop": false,
+
+
+
+     
+    "eslint.autoFixOnSave": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": false
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": false
+        }
+    ],
+    "eslint.options": {
+        "extensinons": [
+            ".ts",
+            ".js",
+            ".tsx",
+            ".jsx"
+        ]
+    },
+    
     
 }

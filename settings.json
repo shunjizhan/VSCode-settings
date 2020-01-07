@@ -1,9 +1,10 @@
--{
+{
     "typescript.validate.enable": false,
     "window.zoomLevel": 1,
     "files.associations": {
         "*.js": "typescriptreact",
-        "*.jsx": "typescriptreact"
+        "*.jsx": "typescriptreact",
+        "*.erb": "erb"
     },
     "vsicons.dontShowNewVersionMessage": true,
 
@@ -19,7 +20,10 @@
     "css.colorDecorators.enable": false,
     "scss.colorDecorators.enable": false,
 
-    "workbench.iconTheme": "vscode-icons","workbench.tree.indent": 16,
+    "eslint.run": "onSave",
+
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tree.indent": 16,
     "workbench.colorCustomizations": {
         "editor.selectionBackground": "#f991577f",
         "editor.inactiveSelectionBackground": "#f991574f",
@@ -29,12 +33,15 @@
 
         "editorBracketMatch.border": "#f991578f",
         
-        "editor.background": "#222222",
-        "editorGutter.background": "#222222",
+        "editor.background": "#262626",
+        "editorGutter.background": "#262626",
 
         "list.hoverForeground": "#f99157",
         "list.hoverBackground": "#00000000",
         "list.inactiveSelectionForeground": "#f99157",
+
+        "activityBar.background": "#262626",
+        "sideBar.background": "#262626",
     },
 
     "editor.tokenColorCustomizations": {
@@ -60,7 +67,7 @@
             }, {
                 "scope": "meta.function-call entity.name.function",
                 "settings": {
-                    "foreground": "#71A1D0"
+                    "foreground": "#75ade0"
                 }
             }, {
                 "scope": "entity.name.function",
@@ -80,7 +87,7 @@
             }, {
                 "scope": "entity.name",
                 "settings": {
-                    "foreground": "#71A1D0"
+                    "foreground": "#75ade0"
                 }
             }, {
                 "name": "Object Literal",
@@ -106,6 +113,7 @@
             }
         ]
     },
+    "workbench.colorTheme": "βui - Eighties Dark",
 
 
 
@@ -145,7 +153,6 @@
             "template": "{price}"
         },
     ],
-    "workbench.colorTheme": "βui - Eighties Dark",
     "explorer.confirmDragAndDrop": false,
 
 
@@ -172,6 +179,15 @@
             ".jsx"
         ]
     },
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "[ruby]": {},
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     
     
 }

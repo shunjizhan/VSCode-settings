@@ -35,5 +35,13 @@
     {
         "key": "cmd+=",
         "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditorInGroup"
     }
 ]

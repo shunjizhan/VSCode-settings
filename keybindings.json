@@ -47,5 +47,10 @@
     {
         "key": "cmd+shift+f",
         "command": "search.action.openNewEditor"
-    }
+    },
+    {
+        "key": "cmd+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
 ]

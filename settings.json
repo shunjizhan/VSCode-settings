@@ -1,6 +1,10 @@
 {
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "typescript.validate.enable": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "files.associations": {
         "*.js": "typescriptreact",
         "*.jsx": "typescriptreact",
@@ -8,42 +12,21 @@
     },
     "vsicons.dontShowNewVersionMessage": true,
 
+
+    /* ----------- editor ----------- */
     "editor.fontSize": 13,
     "editor.fontFamily": "Monaco",
     "editor.wordWrap": "on",
     "editor.showFoldingControls": "always",
     "editor.tabSize": 2,
     "editor.formatOnPaste": true,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.colorDecorators": false,
     "editor.snippetSuggestions": "top",
-
-    "css.colorDecorators.enable": false,
-    "scss.colorDecorators.enable": false,
-
-    "eslint.run": "onSave",
-
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.tree.indent": 16,
-    "workbench.colorCustomizations": {
-        "editor.selectionBackground": "#f991577f",
-        "editor.inactiveSelectionBackground": "#f991574f",
-
-        "editor.selectionHighlightBorder": "#f991578f",
-        "editor.selectionHighlightBackground": "#ffffff00",
-
-        "editorBracketMatch.border": "#f991578f",
-        
-        "editor.background": "#262626",
-        "editorGutter.background": "#262626",
-
-        "list.hoverForeground": "#f99157",
-        "list.hoverBackground": "#00000000",
-        "list.inactiveSelectionForeground": "#f99157",
-
-        "activityBar.background": "#262626",
-        "sideBar.background": "#262626",
+    "editor.minimap.scale": 1,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
     },
-
+    "editor.suggestSelection": "first",
     "editor.tokenColorCustomizations": {
         "strings": "#FFE792",
         "textMateRules": [{
@@ -113,11 +96,28 @@
             }
         ]
     },
+
+    /* ----------- workbench ----------- */   
     "workbench.colorTheme": "βui - Eighties Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tree.indent": 16,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#f991577f",
+        "editor.inactiveSelectionBackground": "#f991574f",
+        "editor.selectionHighlightBorder": "#f991578f",
+        "editor.selectionHighlightBackground": "#ffffff00",
+        "editorBracketMatch.border": "#f991578f",
+        "editor.background": "#262626",
+        "editorGutter.background": "#262626",
+        "list.hoverForeground": "#f99157",
+        "list.hoverBackground": "#00000000",
+        "list.inactiveSelectionForeground": "#f99157",
+        "activityBar.background": "#262626",
+        "sideBar.background": "#262626",
+    },
 
 
-
-    /* ----------- crypto watcher settings ----------- */
+    /* ----------- crypto watcher ----------- */
     // Specify the refresh interval in seconds
     "crypto-ticker.interval": 60,
     // Specify the opening period
@@ -126,7 +126,8 @@
     "crypto-ticker.higherColor": "white",
     "crypto-ticker.lowerColor": "white",
     // Customize your tickers
-    "crypto-ticker.tickers": [{
+    "crypto-ticker.tickers": [
+        {
             // The base cryptocurrency symbol
             "symbol": "BTC",
             // The comparison currency symbol
@@ -140,24 +141,30 @@
             "currency": "USD",
             "template": "{price}"
         }, {
-            "symbol": "ATOM",
+            "symbol": "BCH",
             "currency": "USD",
             "template": "{price}"
         }, {
-            "symbol": "BCH",
+            "symbol": "ETH",
             "currency": "USD",
             "template": "{price}"
         }, {
             "symbol": "XRP",
             "currency": "USD",
             "template": "{price}"
+        }, {
+            "symbol": "ATOM",
+            "currency": "USD",
+            "template": "{price}"
+        }, {
+            "symbol": "BSV",
+            "currency": "USD",
+            "template": "{price}"
         },
     ],
-    "explorer.confirmDragAndDrop": false,
-
-
-
      
+    /* ----------- eslint ----------- */
+    "eslint.run": "onSave",
     "eslint.autoFixOnSave": false,
     "eslint.validate": [
         "javascript",
@@ -179,15 +186,11 @@
             ".jsx"
         ]
     },
-    "gitlens.advanced.messages": {
-        "suppressGitVersionWarning": true
-    },
-    "[ruby]": {},
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": false
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     
-    
+
+    /* ----------- preview features ----------- */
+    "timeline.showView": true,
+    "search.enableSearchEditorPreview": true,
+    // "editor.semanticHighlighting.enabled": true,
+
 }

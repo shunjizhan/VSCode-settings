@@ -55,7 +55,7 @@
             }, {
                 "scope": "entity.name.function",
                 "settings": {
-                    "foreground": "#99cc99"
+                    "foreground": "#99dd99"
                 }
             }, {
                 "scope": "variable.parameter",
@@ -107,13 +107,13 @@
         "editor.selectionHighlightBorder": "#f991578f",
         "editor.selectionHighlightBackground": "#ffffff00",
         "editorBracketMatch.border": "#f991578f",
-        "editor.background": "#262626",
-        "editorGutter.background": "#262626",
+        "editor.background": "#232323",
+        "editorGutter.background": "#232323",
         "list.hoverForeground": "#f99157",
         "list.hoverBackground": "#00000000",
         "list.inactiveSelectionForeground": "#f99157",
-        "activityBar.background": "#262626",
-        "sideBar.background": "#262626",
+        "activityBar.background": "#232323",
+        "sideBar.background": "#232323",
     },
 
 

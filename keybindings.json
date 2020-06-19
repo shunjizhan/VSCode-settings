@@ -36,14 +36,14 @@
         "key": "cmd+=",
         "command": "-workbench.action.zoomIn"
     },
-    {
-        "key": "ctrl+tab",
-        "command": "workbench.action.nextEditorInGroup"
-    },
-    {
-        "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditorInGroup"
-    },
+    // {
+    //     "key": "ctrl+tab",
+    //     "command": "workbench.action.nextEditorInGroup"
+    // },
+    // {
+    //     "key": "ctrl+shift+tab",
+    //     "command": "workbench.action.previousEditorInGroup"
+    // },
     {
         "key": "cmd+shift+f",
         "command": "search.action.openNewEditor"

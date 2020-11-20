@@ -12,6 +12,11 @@
     },
     "vsicons.dontShowNewVersionMessage": true,
 
+    // these doesn't seem to work
+    "typescriptreact.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
 
     /* ----------- editor ----------- */
     "editor.fontSize": 13,
@@ -23,7 +28,8 @@
     // "editor.fontFamily": "ubuntu mono",
     // "editor.fontFamily": "source code pro",
     // "editor.fontFamily": "mononoki",
-    "editor.fontFamily": "Operator Mono Lig",
+    // "editor.fontFamily": "Operator Mono Lig",
+    "editor.fontFamily": "Operator Mono SSm Lig",
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "editor.showFoldingControls": "always",
@@ -222,10 +228,12 @@
     "editor.semanticHighlighting.enabled": false,
     "workbench.colorTheme": "βui - Eighties Dark",
     "[python]": {},
-    "terminal.integrated.shell.linux": "/bin/sh",
+    "terminal.integrated.shell.linux": "/bin/bash",
     "cSpell.userWords": [
         "lovem",
         "taobao"
     ],
+    "liveshare.anonymousGuestApproval": "accept",
+    "explorer.confirmDragAndDrop": false,
 
 }

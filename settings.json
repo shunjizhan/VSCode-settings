@@ -46,30 +46,45 @@
     "editor.scrollbar.verticalScrollbarSize": 0,
     "editor.tokenColorCustomizations": {
         "strings": "#FFE792",
-        "textMateRules": [{
+        "textMateRules": [
+            {
                 "name": "default color",
                 "scope": [
-                    "variable",
-                    "variable.other",
-                    "variable.name",
-                    "variable.other.constant"
+                    "meta.import variable.other",       // variables from import statement
+                    "variable.other.object.property",   // the 'x' in obj.x
+                    "variable.other.property"           // the 'x' in obj.x
                 ],
                 "settings": {
-                    "foreground": "#eeeeee",
-                    "fontStyle": ""
+                    "foreground": "#D4D1C9",
                 }
-            },{
-                "name": "includes parathesis",
-                "scope": "punctuation",
+            }, {
+                "name": "dim symbols",
+                "scope": [
+                    "punctuation",                           // ", '
+                    "punctuation.separator",                 // ,
+                    "punctuation.section.embedded.begin",    // {
+                    "punctuation.section.embedded.end",      // }
+                    "punctuation.terminator.statement",      // ;
+                ],
                 "settings": {
                     "foreground": "#888888"
                 }
             }, {
-                "scope": "meta.function-call entity.name.function",
+                "name": "function call",
+                "scope": [
+                    "meta.function-call entity.name.function",
+                ],
                 "settings": {
                     "foreground": "#75ade0"
                 }
             }, {
+                "name": "react component call",
+                "scope": "entity.name.tag support.class.component",
+                "settings": {
+                    "foreground": "#F4878A"
+                }
+            }, {
+                "name": "function definition",
                 "scope": "entity.name.function",
                 "settings": {
                     "foreground": "#99dd99"
@@ -80,70 +95,38 @@
                     "foreground": "#f99157"
                 }
             }, {
-                "scope": "keyword.operator",
+                // "scope": "keyword.operator",
                 "settings": {
                     "foreground": "#ffcc66"
                 }
             }, {
-                "scope": "entity.name",
-                "settings": {
-                    "foreground": "#75ade0"
-                }
-            }, {
-                "name": "Object Literal",
-                "scope": [
-                    "meta.object-literal.key"
-                ],
+                "name": "object key",
+                "scope": "meta.object-literal.key",
                 "settings": {
                     "foreground": "#ffcc66"
                 }
             }, {
+                "name": "red keywords",
                 "scope": [
-                    // "entity.name.label",
-                    // "meta.function-call",
-                    // "variable.function",
-                    // "keyword.other.special-method",
-                    // "support.function",
-                    // "support.type",
-                    // "support.class"
-			],
+                        "storage.modifier",     // extends
+                        "constant.language",    // null
+			        ],
                 "settings": {
                     "foreground": "#F4878A"
                 }
             }, {
-                "name": "italic font",
+                "name": "don't use italic font",
                 "scope": [
                     "comment",
-                    "keyword",
-                    "storage",
-                    "keyword.control.import",
-                    "keyword.control.default",
-                    "keyword.control.from",
-                    "keyword.operator.new",
-                    "keyword.control.export",
-                    "keyword.control.flow",
-                    "storage.type.class",
-                    "storage.type.function",
-                    "storage.type",
-                    "storage.type.class",
-                    "variable.language",
-                    "variable.language.super",
-                    "variable.language.this",
-                    "meta.class",
-                    "meta.var.expr",
-                    "constant.language.null",
-                    "support.type.primitive",
-                    "entity.name.method.js",
-                    "entity.other.attribute-name",
-                    "punctuation.definition.comment",
-                    "text.html.basic entity.other.attribute-name.html",
-                    "text.html.basic entity.other.attribute-name",
-                    "tag.decorator.js entity.name.tag.js",
-                    "tag.decorator.js punctuation.definition.tag.js",
-                    "source.js constant.other.object.key.js string.unquoted.label.js",
+                    "storage.type.function",        // function
+                    "meta.var storage.type",        // const, let
+                    "keyword.control.from",         // from
+                    "storage.modifier",             // extends
+                    "variable.language",            // this
+                    "entity.other.attribute-name",  // component call attributes
                 ],
                 "settings": {
-                    // "fontStyle": "normal",
+                    "fontStyle": "",
                 }
             }
         ]
@@ -167,6 +150,8 @@
 
 
     /* ----------- crypto watcher ----------- */
+    // Specify your CryptoCompare API key
+    "crypto-ticker.apiKey": "429f251416e2e2c5f4280f9bd18b8214db0afb763889e602ebcca103dd6a5dfa",
     // Specify the refresh interval in seconds
     "crypto-ticker.interval": 60,
     // Specify the opening period
